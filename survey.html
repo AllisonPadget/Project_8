@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <div class="main-nav" role="navigation">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </div>
+
+    <header role="banner">
+      <h1>Accessible Frog</h1>
+      <h2>we make awesome music</h2>
+    </header>
+
+    <main role="main">
+      <h1 class= "heading">Survey</h1>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/concert01.jpg" alt="picture of crowd at concert">
+          <div class="container">
+            <fieldset>
+              <form class="survey">
+                <label>Who is your favorite band member:</label><br>
+                  <div class="radio">
+                    <input type="radio" id="john" aria-describedby="john" name="res" value="John"> 
+                    <label for="john">John</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" id="hazzard" aria-describedby="hazzard" name="res" value="Hazzard">
+                    <label for="hazzard">Hazzard</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" id="bob" aria-describedby="bob" name="res" value="Bob">
+                    <label for="bob">Bob</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" id="sally" aria-describedby="sally" name="res" value="Sally">
+                    <label for="sally">Sally</label>
+                  </div>
+
+                <div class="albums">
+                  <label for="albums">What is your favorite album:</label><br>
+                </div>
+                  <select id="albums" name="select">
+                    <option value="1">A Day Of Old</option>
+                    <option value="2">Diamond Fireworks</option>
+                    <option value="3">Enjoy Your Desire</option>
+                    <option value="4">Finding My Shadow</option>
+                    <option value="5">Heroic Forever</option>
+                    <option value="6">Midnight Fires</option>
+                    <option value="7">Music Of My Life</option>
+                    <option value="8">Party For An Angel</option>
+                    <option value="9">Song For Yesterday</option>
+                    <option value="10">Street Of The Rider</option>
+                    <option value="11">This Is For You</option>
+                  </select>
+                
+                <div class="textarea">
+                  <label for="textarea">What is your favorite song:</label><br>
+                </div>
+                  <textarea id="textarea"></textarea>
+                
+              </form>
+              </fieldset>
+          </div>
+        </div>
+      </div>
+      <h1 class= "heading">Newsletter</h1>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/the_band.jpg" alt="picture of band playing">
+            <div class="container">
+              <fieldset>
+                <form class="newsletter">
+                    <p>
+                    <label for="name">Name: </label>
+                    <input type ="text" id="name" aria-describedby="name" name="textfield">
+                    </p>
+                    <p>
+                    <label for="email">Email: </label>
+                    <input type ="email" id="email" aria-describedby="email" name="textfield">
+                    </p>
+                    <p>
+                    <label for="retype">Retype Email: </label>
+                    <input type ="email" id="retype" aria-describedby="retype" name="textfield">
+                    </p>
+                    <button type="submit" id="submit" aria-describedby="sign_up">Sign Up</button>
+                    <p id="sign_up">By clicking "Sign Up" you will be subscribed to all newsletters from the band!</p>
+                </form>
+              </fieldset>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <ul>
+        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Twitter Icon and clickable link"></a></li>
+        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="YouTube Icon and clickable link"></a></li>
+        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="Spotify Icon and clickable link"></a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Accessible Frog</p>
+    </footer>
+  </body>
+</html>
