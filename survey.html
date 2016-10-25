@@ -8,7 +8,6 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <title>Accessible Frog</title>
   </head>
-
   <body>
     <div class="main-nav" role="navigation">
       <ul class="nav">
@@ -17,21 +16,19 @@
         <li><a href="#">Survey</a></li>
       </ul>
     </div>
-
     <header role="banner">
       <h1>Accessible Frog</h1>
       <h2>we make awesome music</h2>
     </header>
-
     <main role="main">
       <h1 class= "heading">Survey</h1>
       <div class="card">
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg" alt="picture of crowd at concert">
           <div class="container">
-            <fieldset>
-              <form class="survey">
-                <label>Who is your favorite band member:</label><br>
+            <form class="survey">
+              <fieldset>
+                <legend>Who is your favorite band member:</legend><br>
                   <div class="radio">
                     <input type="radio" id="john" aria-describedby="john" name="res" value="John"> 
                     <label for="john">John</label>
@@ -48,31 +45,28 @@
                     <input type="radio" id="sally" aria-describedby="sally" name="res" value="Sally">
                     <label for="sally">Sally</label>
                   </div>
-
-                <div class="albums">
-                  <label for="albums">What is your favorite album:</label><br>
-                </div>
-                  <select id="albums" name="select">
-                    <option value="1">A Day Of Old</option>
-                    <option value="2">Diamond Fireworks</option>
-                    <option value="3">Enjoy Your Desire</option>
-                    <option value="4">Finding My Shadow</option>
-                    <option value="5">Heroic Forever</option>
-                    <option value="6">Midnight Fires</option>
-                    <option value="7">Music Of My Life</option>
-                    <option value="8">Party For An Angel</option>
-                    <option value="9">Song For Yesterday</option>
-                    <option value="10">Street Of The Rider</option>
-                    <option value="11">This Is For You</option>
-                  </select>
-                
-                <div class="textarea">
-                  <label for="textarea">What is your favorite song:</label><br>
-                </div>
-                  <textarea id="textarea"></textarea>
-                
-              </form>
+                  <div class="albums">
+                <label for="albums">What is your favorite album:</label><br>
+                  </div>
+                    <select id="albums" name="select">
+                      <option value="1">A Day Of Old</option>
+                      <option value="2">Diamond Fireworks</option>
+                      <option value="3">Enjoy Your Desire</option>
+                      <option value="4">Finding My Shadow</option>
+                      <option value="5">Heroic Forever</option>
+                      <option value="6">Midnight Fires</option>
+                      <option value="7">Music Of My Life</option>
+                      <option value="8">Party For An Angel</option>
+                      <option value="9">Song For Yesterday</option>
+                      <option value="10">Street Of The Rider</option>
+                      <option value="11">This Is For You</option>
+                    </select>
+                  <div class="textarea">
+                <label for="textarea">What is your favorite song:</label><br>
+                  </div>
+                    <textarea id="textarea"></textarea>
               </fieldset>
+            </form>
           </div>
         </div>
       </div>
@@ -103,7 +97,6 @@
         </div>
       </div>
     </main>
-
     <footer role="contentinfo">
       <ul>
         <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Twitter Icon and clickable link"></a></li>

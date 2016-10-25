@@ -8,7 +8,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #449D44;
+  color: #00b300;
   background: #2d2b30;
 }
 
@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-  color: #999;
+  color: #00b300;
 }
 
 /* Section Styles */
@@ -60,7 +60,7 @@ a:hover {
 }
 
 .nav a:hover {
-  color: white
+  color: #00b300;
 }
 
 header {
@@ -73,7 +73,7 @@ header {
 }
 
 header h1 {
-  color: #333333;
+  color: #414;
   text-transform: uppercase;
   font-size: 50px;
   margin-bottom: 0;
@@ -145,7 +145,7 @@ fieldset {
 .heading{
   font-size: 2em;
   text-transform: uppercase;
-\  color: #E88C0B;
+  color: #E88C0B;
   margin-top: 10px;
 }
 /* Survey.html */
@@ -154,10 +154,10 @@ fieldset {
   padding: 5px;
 }
 .albums {
-  padding: 10px 0px;
+  margin-top: 20px;
 }
 .textarea {
-  padding: 10px 0px;
+  margin-top: 20px;
 }
 
 textarea {
